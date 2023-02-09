@@ -4,6 +4,65 @@
 }
 
 :root {
-    font-family: "Inter", sans-serif;
-    font-family: "Lexend Deca", sans-serif;
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+    --inter: "Inter", sans-serif;
+    --lexend-deca: "Lexend Deca", sans-serif;
+}
+
+.main {
+    font-family: var(--lexend-deca);
+    background: var(--very-dark-blue);
+    padding: 80px 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1200px;
+    background: var(--dark-desaturated-blue);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* preview img */
+
+.main__preview {
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.main__preview--img {
+    min-height: 250px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* section 1 */
+
+.main__section {
+    margin: 40px 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.main__title {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.main__paragraph {
+    color: var(--slightly-transparent-white);
 }
