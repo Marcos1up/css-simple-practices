@@ -27,8 +27,8 @@
     flex-direction: column;
     align-items: center;
 
-    width: 90%;
-    max-width: 1200px;
+    /* width: 95%; */
+    max-width: 1400px;
     background: var(--dark-desaturated-blue);
     overflow: hidden;
     border-radius: 10px;
@@ -50,12 +50,12 @@
     background-position: center;
 }
 
-/* section 1 */
+/* section info */
 
 .main__section {
     margin: 40px 30px;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .main__title {
@@ -65,4 +65,27 @@
 
 .main__paragraph {
     color: var(--slightly-transparent-white);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.purple {
+    color: var(--soft-violet);
+}
+
+/* section stats */
+
+.main__section--stats {
+    text-align: center;
+    gap: 15px;
+}
+
+.number {
+    margin-bottom: 0;
+}
+
+.paragraph--stats {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: small;
 }
